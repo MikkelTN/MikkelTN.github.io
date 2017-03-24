@@ -1,0 +1,75 @@
+html, body {
+	background-color: rgb(51, 51, 51);
+	height: 100%;
+}
+body {
+	color: rgb(255, 255, 255);
+	font-family: 'Raleway', sans-serif;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5;);
+}
+.container {
+	display: table;
+	min-height: 100%
+	height: 100%;
+	width: 100%;
+	-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          	box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.header {
+	padding: 30px;
+}
+
+/** Header **/
+.nav > li {
+	display: inline-block;
+}
+.nav > li + li {
+	margin-left: 20px;
+}
+.nav > li > a {
+	color: rgb(128, 128, 128); /** Old IE **/
+	color: rgba(255, 255, 255, .5);
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 0;
+	padding-right: 0;
+	text-decoration: none;
+	transition: color .2s ease;
+}
+.nav > li > a:hover {
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+}
+
+/** Main **/
+.main {
+	padding: 0 20px;
+
+}
+.main .btn-lg {
+	font-weight: bold;
+	padding: 10px 20px;
+}
+
+/** Footer **/
+.footer {
+	color: rgb(128, 128, 128); /** Old IE **/
+	color: rgba(255, 255, 255, .5);
+}
+
+/** Setup **/
+@media (min-width: 768px) {
+	.header {
+		position: fixed;
+		top: 0;
+	}
+	.footer {
+		position: fixed;
+		bottom: 0;
+	}
+	.container {
+		vertical-align: middle;
+	}
+	.masthead, .mastfoot {
+    width: 100%;
+}
