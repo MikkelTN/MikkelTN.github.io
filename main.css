@@ -1,90 +1,152 @@
-html, body {
-	background-color: rgb(51, 51, 51);
-	height: 100%;
+a:hover {
+	text-decoration: none;
 }
 body {
-	color: rgb(255, 255, 255);
-	font-family: 'Raleway', sans-serif;
-	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5;);
-	text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 62.5%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+div {
+	display: block;
 }
 h1 {
 	font-weight: bold;
 }
-h2 {
-	font-size: 23px;
+p {
+	font-size: 1.4rem;
 }
-h3 {
-	margin-top: 10px;
+a {
+	font-size: 1.6rem;
+}
+.blue {
+	color: rgb(174, 198, 207);
+}
+.button {
+	background-color: transparent;
+	border-radius: 40px;
+	color: rgb(255, 255, 255);
+	display: inline-block;
+	font-weight: bold;
+	height: auto;
+	letter-spacing: 0rem;
+	text-transform: uppercase;
+	transition: all .3s ease-in-out;
+}
+.button:hover {
+	background-color: rgb(174, 198, 207);
+	color: rgb(51, 51, 51);
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
 }
 
-/** Header and navbar **/
-.header, .footer {
-	padding: 10px;
-	background-color: rgba(51, 51, 51, 0.75);
+/** Header **/
+.fs-header {
+  background-color: rgb(51, 51, 51);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  min-height: 300px;
+  position: relative;
+  width: 100%;
 }
-.nav > li {
+.head-contain {
+	display: table;
+	margin: 0 auto;
+	height: 100%;
+}
+.head-content {
+  color: rgb(255, 255, 255);
+  display: table-cell;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  vertical-align: middle;
+}
+.head-content h1 {
+  font-size: 2.3rem;
+  letter-spacing: -0.1rem;
+}
+.head-content a.btn-rim {
+	margin: 3.6rem 0 0;
+	padding: 1.1rem 2.2rem;
+	font-size: 1.1rem;
+	border: 2px solid rgb(174, 198, 207);
+}
+.aboutme {
+	bottom: 2%;
+	color: rgb(174, 198, 207);
 	display: inline-block;
+	left: 50%;
+	padding: 20px;
+	position: absolute;
+	transition: color .2s ease-in;
+	transform: translateX(-50%);
+	z-index: 1;
 }
-.nav > li + li {
-	margin-left: 20px;
-}
-.nav > li > a {
-	color: rgb(128, 128, 128); /** Old IE **/
-	color: rgba(255, 255, 255, .5);
-	font-size: 16px;
-	font-weight: bold;
-	padding-left: 0;
-	padding-right: 0;
-	text-decoration: none;
-	transition: color .2s ease;
-}
-.nav > li > a:hover,
-.nav > li > a:focus,
-.nav > .active > a {
-	background-color: transparent;
+.aboutme:hover {
 	color: rgb(255, 255, 255);
 }
 
-/** Main centering **/
-.outer {
-	display: table;
-	height: 100%;
-	width: 100%;
-	background-image: url("pics/goodday.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+@media screen and (min-width: 500px) {
+	.head-content a.btn-rim {
+		margin: 6rem 0 0;
+		padding: 1.4rem 2.6rem;
+		font-size: 1.4rem;
+		border: 2px solid rgb(174, 198, 207);
+	}
 }
-.middle {
-	display: table-cell;
-	vertical-align: middle;
+
+@media screen and (min-width: 720px) {
+  .head-content h1 {
+    font-size: 2.4rem;
+  }
 }
-.inner {
-	margin-left: auto;
-	margin-right: auto;
+
+@media screen and (min-width: 1080px) {
+  .head-content h1 {
+    font-size: 3.7rem;
+  }
 }
+
+/** About me **/
+#about {
+	background-color: rgb(255, 255, 255);
+	text-align: center;
+	margin: 0 auto;
+}
+#about i {
+	font-size: 3rem;
+}
+.onehalfcol {
+	width: 50%
+}
+
 
 /** Footer **/
-#sitemap-icon {
-	font-size: 23px;
+footer {
+	background-color: rgb(51, 51, 51);
+	padding: 50px 0 30px;
+	text-align: center;
 }
-.footer p {
-	color: rgb(128, 128, 128); /** Old IE **/
-	color: rgba(255, 255, 255, .5);
+footer p {
+	margin: 20px 0;
+	color: rgb(174, 198, 207);
 }
-
-/** Setup **/
-
-@media (min-width: 768px) {
-	.header {
-		position: fixed;
-		top: 0;
-	}
-	.footer {
-		position: fixed;
-		bottom: 0;
-	}
-	.main, .header, .footer {
-    width: 100%;
+footer .link a {
+	color: rgb(174, 198, 207);
+	display: inline-block;
+	height: 30px;
+	margin: 0 5px;
+	transition: color .2s ease-in;
+	width: 30px;
+}
+footer .link a:hover {
+	color: rgb(255, 255, 255);
 }
