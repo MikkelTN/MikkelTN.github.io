@@ -1,4 +1,4 @@
-a:hover {
+a:hover, a:active {
 	text-decoration: none;
 }
 body {
@@ -23,21 +23,6 @@ a {
 .blue {
 	color: rgb(174, 198, 207);
 }
-.button {
-	background-color: transparent;
-	border-radius: 40px;
-	color: rgb(255, 255, 255);
-	display: inline-block;
-	font-weight: bold;
-	height: auto;
-	letter-spacing: 0rem;
-	text-transform: uppercase;
-	transition: all .3s ease-in-out;
-}
-.button:hover {
-	background-color: rgb(174, 198, 207);
-	color: rgb(51, 51, 51);
-}
 .left {
 	float: left;
 }
@@ -52,7 +37,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  min-height: 300px;
+  min-height: 350px;
   position: relative;
   width: 100%;
 }
@@ -70,19 +55,36 @@ a {
   vertical-align: middle;
 }
 .head-content h1 {
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   letter-spacing: -0.1rem;
 }
-.head-content a.btn-rim {
-	margin: 3.6rem 0 0;
-	padding: 1.1rem 2.2rem;
-	font-size: 1.1rem;
+
+/** Header buttons **/
+.forhire {
+	background-color: transparent;
 	border: 2px solid rgb(174, 198, 207);
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	display: inline-block;
+	font-weight: bold;
+	font-size: 1.1rem;
+	height: auto;
+	letter-spacing: 0rem;
+	margin: 3.6rem 0 0;
+	padding: 0.9rem 1.8rem;
+	text-transform: uppercase;
+	transition: all .3s ease-in-out;
+}
+.forhire:hover, .forhire:active {
+	background-color: rgb(174, 198, 207);
+	color: rgb(51, 51, 51);
+	padding: 0.9rem 2.3rem;
 }
 .aboutme {
 	bottom: 2%;
 	color: rgb(174, 198, 207);
 	display: inline-block;
+	font-size: 1.1rem;
 	left: 50%;
 	padding: 20px;
 	position: absolute;
@@ -90,56 +92,71 @@ a {
 	transform: translateX(-50%);
 	z-index: 1;
 }
-.aboutme:hover {
+.aboutme:hover, .aboutme:active {
 	color: rgb(255, 255, 255);
-}
-
-@media screen and (min-width: 500px) {
-	.head-content a.btn-rim {
-		margin: 6rem 0 0;
-		padding: 1.4rem 2.6rem;
-		font-size: 1.4rem;
-		border: 2px solid rgb(174, 198, 207);
-	}
 }
 
 @media screen and (min-width: 720px) {
   .head-content h1 {
-    font-size: 2.4rem;
+    font-size: 4.5rem;
   }
-}
-
-@media screen and (min-width: 1080px) {
-  .head-content h1 {
-    font-size: 3.7rem;
-  }
+  .forhire {
+		margin: 4.5rem 0 0;
+		padding: 1.1rem 2.1rem;
+		font-size: 1.4rem;
+		border: 2px solid rgb(174, 198, 207);
+	}
+	.forhire:hover, .forhire:active {
+		padding: 1.1rem 2.6rem;
+	}
+	.aboutme {
+		font-size: 1.5rem;
+		padding: 15px;
+	}
 }
 
 /** About me **/
 #about {
 	background-color: rgb(255, 255, 255);
+	min-height: 100vh;
 	text-align: center;
 	margin: 0 auto;
 }
 #about i {
 	font-size: 3rem;
 }
-.onehalfcol {
-	width: 50%
+.onethirdcol {
+	display: inline-block;
+	padding: 0 7rem;
+	vertical-align: top;
+	width: 100%
 }
 
+@media screen and (min-width: 720px) {
+	.onethirdcol {
+		padding: 0 5rem;
+		width: 33%;
+	}
+}
+
+/** Contact **/
+#contact {
+	background-color: rgb(174, 198, 207);
+	color: rgb(51, 51, 51);
+	min-height: 100vh;
+}
 
 /** Footer **/
 footer {
 	background-color: rgb(51, 51, 51);
-	padding: 50px 0 30px;
+	padding: 10px 0 20px;
 	text-align: center;
 }
 footer p {
 	margin: 20px 0;
 	color: rgb(174, 198, 207);
 }
-footer .link a {
+footer .links a {
 	color: rgb(174, 198, 207);
 	display: inline-block;
 	height: 30px;
@@ -147,6 +164,6 @@ footer .link a {
 	transition: color .2s ease-in;
 	width: 30px;
 }
-footer .link a:hover {
+footer .links a:hover {
 	color: rgb(255, 255, 255);
 }
