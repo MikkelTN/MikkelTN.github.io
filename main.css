@@ -68,7 +68,7 @@ header {
   vertical-align: middle;
 }
 .head-content h1 {
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   letter-spacing: -0.1rem;
   line-height: 5rem;
 }
@@ -84,7 +84,7 @@ header {
 	font-size: 1.3rem;
 	height: auto;
 	letter-spacing: 0rem;
-	margin: 3.6rem 0 0;
+	margin: 1rem 0 0;
 	padding: 0.9rem 1.8rem;
 	text-transform: uppercase;
 	transition: all .3s ease-in-out;
@@ -132,7 +132,7 @@ header {
     font-size: 4.5rem;
   }
   .forhire {
-		margin: 4.5rem 0 0;
+		margin: 3rem 0 0;
 		padding: 1.1rem 2.1rem;
 		font-size: 1.4rem;
 		border: 2px solid rgb(174, 198, 207);
@@ -186,7 +186,7 @@ header {
 	text-align: center;
 }
 .collaborate img {
-	border-radius: 20vh;
+	border-radius: 60px;
 	height: 120px;
 	margin-right: 20px;
 	vertical-align: top;
@@ -198,7 +198,7 @@ header {
 }
 .links {
 	background-color: rgb(51, 51, 51);
-	padding: 15px 0 19px;
+	padding: 5px 0 9px;
 	position: absolute;
 	bottom: 0;
 	text-align: center;
