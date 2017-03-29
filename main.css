@@ -67,10 +67,12 @@ header {
   vertical-align: middle;
 }
 .head-content h1 {
-  
-  font-size: 3rem;
+  font-size: 3.5rem;
   letter-spacing: -0.1rem;
   line-height: 4rem;
+}
+.head-content h3 {
+  font-size: 2rem;
 }
 
 /** Header buttons **/
@@ -84,7 +86,7 @@ header {
 	font-size: 1.3rem;
 	height: auto;
 	letter-spacing: 0rem;
-	margin: 1rem 0 0;
+	margin: 3rem 0 0;
 	padding: 0.9rem 1.8rem;
 	text-transform: uppercase;
 	transition: all .3s ease-in-out;
@@ -132,6 +134,9 @@ header {
     font-size: 4.5rem;
     line-height: 5.5rem;
   }
+  .head-content h3 {
+		font-size: 2.8rem;
+	}
   .forhire {
 		margin: 3rem 0 0;
 		padding: 1.1rem 2.1rem;
