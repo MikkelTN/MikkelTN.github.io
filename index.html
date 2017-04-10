@@ -16,45 +16,56 @@
   	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   	<!-- Custom style -->
   	<link href="main.css" rel="stylesheet">
+
+  	<!-- JS fun -->
+  	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/linkscroll.js"></script>
   </head>
 
   <body>
     <!-- Header and navigation section -->
-  	<header class="fs">
-      <div class="head-content">
-        <h1>Hi, my name is Mikkel</h1>
-        <h3>I am a software developer.</h3> <!-- Header -->
-        <div>
-          <a href="#contact" class="forhire">Let's work together</a>
-        </div>
-        <div>
-          <a href="#about" class="aboutme">What I do<br><i class="fa fa-caret-down"></i></a>
-        </div> <!-- Navigation -->
-      </div> 
-    </header>
+  	<section id="header">
+  	  <header class="fs">
+        <div class="head-content">
+          <h1>Hi, my name is Mikkel</h1>
+          <h3>I am a software developer.</h3> <!-- Header -->
+          <div>
+            <a href="#contact" class="forhire">Let's work together</a>
+          </div>
+          <div>
+            <a href="#about" class="aboutme">What I do<br>
+              <i class="fa fa-caret-down"></i>
+            </a>
+          </div>
+          <div>
+            <a href="#header" id="toTop" style="display: none">
+              <i class="fa fa-caret-up"></i>
+            </a>
+          </div> <!-- Navigation -->
+        </div> 
+      </header>
+    </section>
 
     <!-- About me section -->
     <section id="about">
-      <div class="container">
-        <h2>My competences</h2>
-        <div class="columns">
-          <div class="onethirdcol">
-            <i class="fa fa-pencil blue"></i>
-            <h3>Design</h3>
-            <p>I create websites and applications directed by intuitive and minimalistic design. With a focus on well known user-friendly patterns in the UI and an attention to detail, I aim for a great experience and compatibility across all devices and browsers.</p>
-          </div>
-          <div class="onethirdcol">
-            <i class="fa fa-code blue"></i>
-            <h3>Code</h3>
-            <p>I design websites using HTML5, CSS3 as well as JavaScript, and I am proficient in frameworks such as Bootstrap, jQuery and SASS. I also write applications using Java in Eclipse. I make sure to maintain proper control of my projects with Git and a well documented code.</p>
-          </div>
-          <div class="onethirdcol">
-            <i class="fa fa-handshake-o blue"></i>
-            <h3>Relations</h3>
-            <p>I have a strong focus on customer relations, and the posibilities of continuously involving the customer in the development of a project. It simply creates a very efficient flow in the design process as well as an end product of high quality.</p>
-          </div>
-        </div>
-      </div>
+      <h2 id="abouthead">My competences</h2>
+      <ul class="columns">
+        <li class="column-item">
+          <i class="fa fa-pencil blue"></i>
+          <h3>Design</h3>
+          <p>I create websites and applications directed by intuitive and minimalistic design. With a focus on well known user-friendly patterns in the UI and an attention to detail, I aim for a great experience and compatibility across all devices and browsers.</p>
+        </li>
+        <li class="column-item">
+          <i class="fa fa-code blue"></i>
+          <h3>Code</h3>
+          <p>I design websites using HTML5, CSS3 as well as JavaScript, and I am proficient in frameworks such as Bootstrap, jQuery and SASS. I also write applications using Java in Eclipse. I make sure to maintain proper control of my projects with Git and a well documented code.</p>
+        </li>
+        <li class="column-item">
+          <i class="fa fa-handshake-o blue"></i>
+          <h3>Relations</h3>
+          <p>I have a strong focus on customer relations, and the posibilities of continuously involving the customer in the development of a project. It simply creates a very efficient flow in the design process as well as an end product of high quality.</p>
+        </li>
+      </ul>
     </section> <!-- What I do! -->
 
     <!-- Footer and contact section -->
@@ -83,7 +94,5 @@
         </footer> <!-- Footer -->
     </section>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script type="text/javascript" src="scripts/linkscroll.js"></script>
   </body>
 </html>
