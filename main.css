@@ -175,6 +175,7 @@ header {
 	flex-wrap: wrap;
 	list-style: none;
 	justify-content: space-around;
+	-webkit-padding-start: 0;
 }
 .column-item {
 	width: 300px;
