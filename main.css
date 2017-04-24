@@ -1,7 +1,8 @@
 html {
+	font-size: 62.5%;
 	scroll-behavior: smooth;
 }
-html, body, h1, h2, h3, h4, h5, h6, div {
+html, body, h1, h2, h3, h4, h5, h6, p, div {
   padding: 0;
   border: 0;
   margin: 0;
@@ -11,22 +12,21 @@ a:link, a:visited, a:hover, a:active {
 }
 body {
   font-family: 'Raleway', Arial, sans-serif;
-  font-size: 62.5%;
   display: block;
 }
 div {
 	display: block;
 }
 h1 {
-	font-weight: bold;
+	font-weight: normal;
 }
 h2 {
-	font-weight: bold;
 	font-size: 3.6rem;
 	padding: 1.5rem 0 1.9rem;
 }
 h3 {
 	font-size: 2.8rem;
+	font-weight: normal;
 	line-height: 5rem;
 }
 img {
@@ -34,6 +34,7 @@ img {
 }
 p {
 	font-size: 1.6rem;
+	line-height: 2.4rem;
 }
 a {
 	font-size: 1.6rem;
@@ -56,42 +57,47 @@ button {
 .head-content {
   color: rgb(255, 255, 255);
   position: relative;
-  top: 27%;
+  top: 35%;
 }
 .head-content h1 {
   font-size: 3rem;
   letter-spacing: -0.1rem;
   line-height: 2.5rem;
+  transition: opacity .15s ease-in-out;
 }
 .head-content h3 {
   font-size: 2rem;
   line-height: 4rem;
-  margin-bottom: 3rem;
 }
 .blue {
 	color: rgb(174, 198, 207);
 }
 /** Header buttons **/
-#toContact {
+.def-btn {
 	background-color: transparent;
 	border: 2px solid rgb(174, 198, 207);
 	border-radius: 30px;
-	color: rgb(255, 255, 255);
 	font-weight: bold;
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	height: auto;
 	letter-spacing: 0rem;
-	padding: 0.9rem 1.8rem;
+	margin-top: 2.4rem;
+	padding: 0.9em 1.8em;
 	text-transform: uppercase;
 	transition: all .3s ease-in-out;
 }
-#toContact:hover {
+.def-btn:hover {
 	background-color: rgb(174, 198, 207);
+	padding: 0.9em 2.8em;
+}
+#toContact {
+	color: rgb(255, 255, 255);
+}
+#toContact:hover {
 	color: rgb(51, 51, 51);
-	padding: 0.9rem 2.8rem;
 }
 #toAbout {
-	bottom: 5%;
+	bottom: 1%;
 	display: inline-block;
 	font-size: 1.2rem;
 	left: 50%;
@@ -129,6 +135,9 @@ button {
   	background-repeat: no-repeat;
   	background-size: cover;
   }
+  .def-btn {
+  	font-size: 1.3rem;
+  }
   .head-content h1 {
     font-size: 4.5rem;
     line-height: 5.5rem;
@@ -139,12 +148,7 @@ button {
 		margin-bottom: 4rem;
 	}
   #toContact {
-		padding: 1.1rem 2.1rem;
 		font-size: 1.4rem;
-		border: 2px solid rgb(174, 198, 207);
-	}
-	#toContact:hover {
-		padding: 1.1rem 3.3rem;
 	}
 	#toAbout {
 		font-size: 1.4rem;
@@ -161,22 +165,18 @@ button {
 	padding: 0;
 }
 .column-item {
-	width: 300px;
-	margin: 10px auto;
+	margin: 10px 20px;
   position: relative;
+  width: 300px;
 }
-.expand {
-	background-color: rgb(174, 198, 207);
-	border-radius: 100vh;
-	display: none;
-	height: 0;
-	left: 50%;
+.column-item h3 {
+	margin-top: 5rem;
+}
+.column-item i {
 	position: absolute;
-	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
-	transition: all 1s ease-in-out;
-	width: 0;
-	z-index: 1;
+	top: 1rem;
+	transition: all 0.3s;
+	transform: translateX(-50%);
 }
 #abouthead {
 	padding-top: 20px;
@@ -195,11 +195,12 @@ button {
 /** Footer and contact **/
 #contact {
 	background-color: rgb(174, 198, 207);
-	color: rgb(51, 51, 51);
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 .collaborate {
 	margin: 0 auto;
-	min-height: 85vh;
 	padding: 20px;
 	text-align: center;
 }
@@ -217,19 +218,17 @@ button {
 }
 footer {
 	background-color: rgb(51, 51, 51);
-	min-height: 15vh;
-	width: 100%;
-  padding: 2rem 6rem 0.9rem;
+	margin-top: auto;
+	padding-bottom: 1.3rem;
 	text-align: center;
 }
 footer p {
-	font-size: 1.4rem;
-	margin: 1rem 0;
+	font-size: 1.2rem;
 }
 footer a {
 	display: inline-block;
 	height: 30px;
-	margin: 0 0.5rem;
+	margin: 2rem 0.5rem 0.5rem;
 	transition: color .2s ease-in;
 	width: 30px;
 }
