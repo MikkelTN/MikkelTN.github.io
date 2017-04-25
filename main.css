@@ -43,34 +43,37 @@ button {
 	background-color: transparent;
 	background-repeat: no-repeat;
 	border: none;
+	cursor: pointer;
 	outline: none;
 	overflow: hidden;
+}
+.blue {
+	color: rgb(174, 198, 207);
 }
 /** Header **/
 #header {
 	background-color: rgb(51, 51, 51);
+	display: flex;
+	flex-direction: column;
 	margin: 0 auto;
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
 	text-align: center;
 }
 .head-content {
   color: rgb(255, 255, 255);
-  position: relative;
-  top: 35%;
+  margin-top: 30vh;
+  transition: opacity .15s ease-in-out;
+}
+.flexbound {
+	height: 6.5vh;
 }
 .head-content h1 {
   font-size: 3rem;
   letter-spacing: -0.1rem;
-  line-height: 2.5rem;
-  transition: opacity .15s ease-in-out;
 }
 .head-content h3 {
   font-size: 2rem;
-  line-height: 4rem;
-}
-.blue {
-	color: rgb(174, 198, 207);
 }
 /** Header buttons **/
 .def-btn {
@@ -81,7 +84,7 @@ button {
 	font-size: 1.1rem;
 	height: auto;
 	letter-spacing: 0rem;
-	margin-top: 2.4rem;
+	margin-top: 10vh;
 	padding: 0.9em 1.8em;
 	text-transform: uppercase;
 	transition: all .3s ease-in-out;
@@ -97,15 +100,9 @@ button {
 	color: rgb(51, 51, 51);
 }
 #toAbout {
-	bottom: 1%;
-	display: inline-block;
 	font-size: 1.2rem;
-	left: 50%;
-	padding: 2rem;
-	position: absolute;
+	margin: auto auto 0;
 	transition: color .3s ease-in-out;
-	transform: translateX(-50%);
-	z-index: 1;
 }
 #toAbout:hover {
 	color: rgb(255, 255, 255);
@@ -140,12 +137,9 @@ button {
   }
   .head-content h1 {
     font-size: 4.5rem;
-    line-height: 5.5rem;
   }
   .head-content h3 {
 		font-size: 2.8rem;
-		line-height: 5rem;
-		margin-bottom: 4rem;
 	}
   #toContact {
 		font-size: 1.4rem;
@@ -173,10 +167,15 @@ button {
 	margin-top: 5rem;
 }
 .column-item i {
+	font-size: 3rem;
 	position: absolute;
 	top: 1rem;
 	transition: all 0.3s;
 	transform: translateX(-50%);
+}
+.column-item .hover {
+	color: rgb(174, 198, 207);
+	font-size: 4rem;
 }
 #abouthead {
 	padding-top: 20px;
@@ -187,9 +186,6 @@ button {
 	min-height: 100vh;
 	overflow: hidden;
 	text-align: center;
-}
-#about i {
-	font-size: 3rem;
 }
 
 /** Footer and contact **/
@@ -229,9 +225,5 @@ footer a {
 	display: inline-block;
 	height: 30px;
 	margin: 2rem 0.5rem 0.5rem;
-	transition: color .2s ease-in;
 	width: 30px;
-}
-footer a:hover {
-	color: rgb(255, 255, 255);
 }

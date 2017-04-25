@@ -1,5 +1,4 @@
  //Actions
-
  function scroll(e) {
   const scrollTo = e.target.id.slice(2).toLowerCase();
   document.getElementById(scrollTo).scrollIntoView({
