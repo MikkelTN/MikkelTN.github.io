@@ -10,10 +10,11 @@ function fadeBtn(el, pos) {
 }
 
 document.addEventListener('DOMContentLoaded', function(event) {
+
   var lastScrollPosition = 0;
   var ticking = false;
   var top = document.querySelector("#toHeader");
-
+  
   window.addEventListener('scroll', function(event) {
     lastPosition = window.scrollY;
     if(!ticking) {
