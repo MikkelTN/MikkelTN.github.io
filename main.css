@@ -1,6 +1,5 @@
 html {
 	font-size: 62.5%;
-	scroll-behavior: smooth;
 }
 html, body, h1, h2, h3, h4, h5, h6, p, div {
   padding: 0;
@@ -93,27 +92,32 @@ button {
 	background: rgb(174, 198, 207);
 	padding: 0.9em 2.8em;
 }
+.carets {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 6rem;
+	margin-top: auto;
+}
+.caret-btn {
+	font-size: 1.2rem;
+	transition: color .3s ease-in-out;
+}
+.caret-btn:hover {
+	color: rgb(255, 255, 255);
+}
 #toContact {
 	color: rgb(255, 255, 255);
 }
 #toContact:hover {
 	color: rgb(51, 51, 51);
 }
-#toAbout {
-	font-size: 1.2rem;
-	margin: auto auto 1rem;
-	transition: color .3s ease-in-out;
-}
-#toAbout:hover {
-	color: rgb(255, 255, 255);
-}
 #toHeader {
 	background: rgba(51, 51, 51, 0.7);
   border-radius: 40px;
 	bottom: 50px;
+	color: rgb(174, 198, 207);
 	font-size: 1.6rem;
 	height: 30px;
-	line-height: 2.7rem;
 	position: fixed;
 	opacity: 0;
 	right: 15px;
@@ -132,6 +136,10 @@ button {
   	background-repeat: no-repeat;
   	background-size: cover;
   }
+  .caret-btn {
+		font-size: 1.4rem;
+		padding: 1.5rem;
+	}
   .def-btn {
   	font-size: 1.3rem;
   }
@@ -143,10 +151,6 @@ button {
 	}
   #toContact {
 		font-size: 1.4rem;
-	}
-	#toAbout {
-		font-size: 1.4rem;
-		padding: 1.5rem;
 	}
 }
 
