@@ -7,21 +7,31 @@ const elmPosition = e => {
 const scroll = e => {
   e.preventDefault();
 
+  //Set initial positions for scroll calculation
   let scrollPos = window.pageYOffset,
-      step = 1;
+      step = 1,
+      dist;
 
+  //Set element position and check if scrolling up or down
   const elmPos = elmPosition(e),
         reverse = scrollPos < elmPos ? 1 : -1;
+        startDist = reverse * (elmPos - scrollPos);
 
   const animateScroll = () => {
-  	requestID = requestAnimationFrame(animateScroll);
+    requestID = requestAnimationFrame(animateScroll);
+    dist = reverse * (elmPos - scrollPos);
 
+    //Accelerate scrolling and brake at 75% mark
   	if (reverse * scrollPos < elmPos) {
   	  window.scrollTo(0, scrollPos);
   	  scrollPos += reverse * step;
-  	  if (step < 100) {
-  	  	step *= 1.15;
-  	  }
+  	  //The steps are set manually, this should be improved for use in a larger project
+      if (step < 2 * Math.sqrt(startDist) && dist > startDist / 4) {
+  	  	step *= 1.2;
+  	  } else if (step > 1 && dist < startDist / 4) {
+        step /= 1.1;
+      }
+    //Finish scroll and stop scrolling
   	} else {
   	  window.scrollTo(0, elmPos);
   	  cancelAnimationFrame(requestID);
