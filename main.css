@@ -159,7 +159,7 @@ button {
 .columns {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;	
+	justify-content: space-around;
 	list-style: none;
 	padding: 0;
 }
@@ -201,7 +201,7 @@ button {
   text-align: center;
 }
 .project img {
-	border-radius: 18px;
+	border-radius: 4px;
 	margin: 10px;
 }
 /** Clearfix **/
