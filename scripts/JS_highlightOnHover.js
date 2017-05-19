@@ -1,17 +1,17 @@
 //Mouseenter
-function hoverIn(e) {
+const hoverIn = e => {
   const logo = e.currentTarget.querySelector('i');
   logo.classList.add('hover');
 }
 
 //Mouseleave
-function hoverOut(e) {
+const hoverOut = e => {
   const logo = e.currentTarget.querySelector('i');
   logo.classList.remove('hover');
 }
 
 //Add handlers
-function addHover() {
+const addHover = () => {
   const cols = document.querySelectorAll('.column-item');
   for(let i = 0; i < cols.length; i++) {
     cols[i].addEventListener('mouseover', hoverIn);
@@ -19,6 +19,6 @@ function addHover() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', function(event) {
+document.addEventListener('DOMContentLoaded', () => {
   addHover();
 });
