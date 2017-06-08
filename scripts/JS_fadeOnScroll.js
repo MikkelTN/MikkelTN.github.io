@@ -11,11 +11,10 @@ function fadeBtn(elm) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-
   let ticking = false;
 
   const elm = document.querySelector("#toHeader");
-  
+
   window.addEventListener('scroll', () => {
     if(!ticking) {
   	  window.requestAnimationFrame(() => {
