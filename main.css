@@ -1,42 +1,38 @@
-html {
-	font-size: 62.5%;
-}
 html, body, h1, h2, h3, h4, h5, h6, p, div {
   padding: 0;
   border: 0;
   margin: 0;
 }
+html {
+	font-size: 62.5%;
+}
 a:link, a:visited, a:hover, a:active {
 	text-decoration: none;
 }
 body {
-  font-family: 'Raleway', Arial, sans-serif;
   display: block;
+	font-family: 'Raleway', Arial, sans-serif;
+	font-size: calc(1.2rem + 0.5vw);
+	line-height: calc(1.1em + 0.5vw);
 }
 div {
 	display: block;
 }
 h1 {
 	font-weight: normal;
+	font-size: calc(1.2rem + 2.5vw);
 }
 h2 {
-	font-size: 3.6rem;
-	padding: 1.5rem 0 1.9rem;
+	font-size: calc(1.1rem + 2.2vw);
+	line-height: 2em;
 }
 h3 {
-	font-size: 2.8rem;
 	font-weight: normal;
-	line-height: 4rem;
+	font-size: calc(1rem + 2vw);
+	line-height: calc(2em + 0.5vw);
 }
 img {
 	display: inline-block;
-}
-p {
-	font-size: 1.6rem;
-	line-height: 2.4rem;
-}
-a {
-	font-size: 1.6rem;
 }
 button {
 	background: transparent;
@@ -68,19 +64,15 @@ button {
 	height: 6.5vh;
 }
 .head-content h1 {
-  font-size: 3rem;
   letter-spacing: -0.1rem;
-}
-.head-content h3 {
-  font-size: 2rem;
 }
 /** Header buttons **/
 .def-btn {
 	background: transparent;
 	border: 2px solid rgb(174, 198, 207);
 	border-radius: 30px;
+	font-size: 0.75em;
 	font-weight: bold;
-	font-size: 1.1rem;
 	height: auto;
 	letter-spacing: 0rem;
 	margin-top: 10vh;
@@ -99,7 +91,6 @@ button {
 	margin-top: auto;
 }
 .caret-btn {
-	font-size: 1.2rem;
 	transition: color .3s ease-in-out;
 }
 .caret-btn:hover {
@@ -129,32 +120,6 @@ button {
 	color: rgb(255, 255, 255);
 }
 
-@media screen and (min-width: 720px) {
-  #header {
-  	background-image: url("pics/goodday.jpg");
-  	background-position: center center;
-  	background-repeat: no-repeat;
-  	background-size: cover;
-  }
-  .caret-btn {
-		font-size: 1.4rem;
-		padding: 1.5rem;
-	}
-  .def-btn {
-  	font-size: 1.3rem;
-  }
-  .head-content h1 {
-    font-size: 4.5rem;
-  }
-  .head-content h3 {
-		font-size: 2.8rem;
-		line-height: 8rem;
-	}
-  #toContact {
-		font-size: 1.4rem;
-	}
-}
-
 /** About me **/
 .columns {
 	display: flex;
@@ -169,10 +134,11 @@ button {
   width: 300px;
 }
 .column-item h3 {
-	margin-top: 5rem;
+	font-weight: bold;
+	margin-top: calc(3.5rem + 0.5vw);
 }
 .column-item i {
-	font-size: 3rem;
+	font-size: calc(2rem + 0.5vw);
 	position: absolute;
 	top: 1rem;
 	transition: all 0.3s;
@@ -180,7 +146,7 @@ button {
 }
 .column-item .hover {
 	color: rgb(174, 198, 207);
-	font-size: 4rem;
+	font-size: calc(3rem + 0.5vw);
 }
 #abouthead {
 	padding-top: 20px;
@@ -253,9 +219,6 @@ footer {
 	margin-top: auto;
 	padding-bottom: 1.3rem;
 	text-align: center;
-}
-footer p {
-	font-size: 1.2rem;
 }
 footer a {
 	display: inline-block;
