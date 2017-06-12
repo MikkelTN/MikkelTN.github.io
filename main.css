@@ -3,12 +3,15 @@ html, body, h1, h2, h3, h4, h5, h6, p, div {
   border: 0;
   margin: 0;
 }
+
 html {
 	font-size: 62.5%;
 }
+
 a:link, a:visited, a:hover, a:active {
 	text-decoration: none;
 }
+
 body {
   color: rgb(40, 40, 40);
   display: block;
@@ -16,45 +19,76 @@ body {
 	font-size: calc(1rem + 0.3vw);
 	line-height: calc(1.5em + 0.3vw);
 }
+
 div {
 	display: block;
 }
+
+p {
+  max-width: 70vw;
+}
+
 h1 {
   font-size: calc(1.7rem + 1vw);
   font-weight: normal;
 }
+
 h2 {
   font-size: calc(1.4rem + 1vw);
   font-weight: normal;
 	line-height: 2em;
   padding: 0.7em 0;
 }
+
 h3 {
   font-size: calc(1rem + 1vw);
   font-weight: normal;
 	line-height: calc(1em + 1vw);
 }
+
+h4 {
+  font-size: calc(0.8rem + 0.3vw);
+  font-weight: normal;
+	line-height: calc(1.2em + 0.3vw);
+}
+
 img {
 	display: inline-block;
 }
+
 button {
 	background: transparent;
 	background-repeat: no-repeat;
 	border: none;
 	cursor: pointer;
   font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-size: calc(1rem + 0.3vw);
 	outline: none;
 	overflow: hidden;
 }
+
 .blue {
 	color: rgb(174, 198, 207);
 }
+
 .gray {
   color: rgb(120, 120, 120);
 }
+
 .uppercase {
   text-transform: uppercase;
 }
+
+.roundbox {
+  border-radius: 2.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(51, 51, 51, 0.7);
+  height: 2.3em;
+  width: 2.3em;
+}
+
 /** Header **/
 #header {
 	background: rgb(51, 51, 51);
@@ -65,17 +99,21 @@ button {
 	width: 100%;
 	text-align: center;
 }
+
 .head-content {
   color: rgb(255, 255, 255);
   margin-top: 30vh;
   transition: opacity .15s ease-in-out;
 }
+
 .flexbound {
 	height: 6.5vh;
 }
+
 .head-content h1 {
   letter-spacing: -0.1rem;
 }
+
 /** Header buttons **/
 .def-btn {
 	background: transparent;
@@ -88,6 +126,7 @@ button {
 	padding: 0.9em 1.8em;
 	transition: all .3s ease-in-out;
 }
+
 .def-btn:hover {
 	background: rgb(174, 198, 207);
 	padding: 0.9em 2.8em;
@@ -100,9 +139,11 @@ button {
 	margin-bottom: 6rem;
 	margin-top: auto;
 }
+
 .caret-btn {
 	transition: color .3s ease-in-out;
 }
+
 .caret-btn:hover {
 	color: rgb(255, 255, 255);
 }
@@ -117,23 +158,21 @@ button {
 #toContact {
   color: rgb(255, 255, 255);
 }
+
 #toContact:hover {
 	color: rgb(51, 51, 51);
 }
+
 #toHeader {
-	background: rgba(51, 51, 51, 0.7);
-  border-radius: 40px;
 	bottom: 50px;
 	color: rgb(174, 198, 207);
-	font-size: 1.6rem;
-	height: 30px;
 	position: fixed;
 	opacity: 0;
 	right: 15px;
 	transition: all .3s ease-in-out;
-	width: 30px;
 	z-index: 10;
 }
+
 #toHeader:hover {
 	color: rgb(255, 255, 255);
 }
@@ -146,26 +185,26 @@ button {
 	list-style: none;
 	padding: 0;
 }
+
 .column-item {
-	margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 20px;
   position: relative;
   width: 300px;
 }
+
 .column-item h3 {
 	font-weight: bold;
-	margin-top: calc(3.5rem + 0.5vw);
+  margin-top: 1em;
 }
+
 .column-item i {
-  background: rgb(51, 51, 51);
-  border-radius: 2em;
   color: rgb(174, 198, 207);
   font-size: calc(1em + 0.5vw);
-  height: 1.8em;
-  line-height: calc(1.4em + 0.5vw);
-  position: absolute;
-	transform: translateX(-50%);
-  width: 1.8em;
 }
+
 #about {
 	background: rgb(255, 255, 255);
 	margin: 0 auto;
@@ -202,6 +241,7 @@ button {
 .project img {
   max-width: 70vw;
 }
+
 /** Footer and contact **/
 #contact {
 	background: rgb(51, 51, 51);
@@ -209,11 +249,13 @@ button {
 	flex-direction: column;
 	min-height: 100vh;
 }
+
 .collaborate {
 	color: rgb(255, 255, 255);
 	margin: 0 auto;
 	text-align: center;
 }
+
 .collaborate img {
 	border-radius: 50%;
 	display: inline;
@@ -222,15 +264,18 @@ button {
 	vertical-align: top;
 	width: 120px;
 }
+
 .collaborate p {
 	margin: 0 20px;
 	text-align: left;
 }
+
 footer {
 	margin-top: auto;
 	padding-bottom: 1.3rem;
 	text-align: center;
 }
+
 footer a {
 	display: inline-block;
 	height: 30px;
