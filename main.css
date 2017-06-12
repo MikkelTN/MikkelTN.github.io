@@ -10,26 +10,29 @@ a:link, a:visited, a:hover, a:active {
 	text-decoration: none;
 }
 body {
+  color: rgb(40, 40, 40);
   display: block;
-	font-family: 'Raleway', Arial, sans-serif;
-	font-size: calc(1.2rem + 0.5vw);
-	line-height: calc(1.1em + 0.5vw);
+	font-family: 'Roboto Condensed', Arial, sans-serif;
+	font-size: calc(1rem + 0.3vw);
+	line-height: calc(1.5em + 0.3vw);
 }
 div {
 	display: block;
 }
 h1 {
-	font-weight: normal;
-	font-size: calc(1.2rem + 2.5vw);
+  font-size: calc(1.7rem + 1vw);
+  font-weight: normal;
 }
 h2 {
-	font-size: calc(1.1rem + 2.2vw);
+  font-size: calc(1.4rem + 1vw);
+  font-weight: normal;
 	line-height: 2em;
+  padding: 0.7em 0;
 }
 h3 {
-	font-weight: normal;
-	font-size: calc(1rem + 2vw);
-	line-height: calc(2em + 0.5vw);
+  font-size: calc(1rem + 1vw);
+  font-weight: normal;
+	line-height: calc(1em + 1vw);
 }
 img {
 	display: inline-block;
@@ -39,11 +42,18 @@ button {
 	background-repeat: no-repeat;
 	border: none;
 	cursor: pointer;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
 	outline: none;
 	overflow: hidden;
 }
 .blue {
 	color: rgb(174, 198, 207);
+}
+.gray {
+  color: rgb(120, 120, 120);
+}
+.uppercase {
+  text-transform: uppercase;
 }
 /** Header **/
 #header {
@@ -71,19 +81,19 @@ button {
 	background: transparent;
 	border: 2px solid rgb(174, 198, 207);
 	border-radius: 30px;
-	font-size: 0.75em;
-	font-weight: bold;
+	font-size: calc(0.9rem + 0.3vw);
 	height: auto;
 	letter-spacing: 0rem;
-	margin-top: 10vh;
+	margin-top: 3em;
 	padding: 0.9em 1.8em;
-	text-transform: uppercase;
 	transition: all .3s ease-in-out;
 }
 .def-btn:hover {
 	background: rgb(174, 198, 207);
 	padding: 0.9em 2.8em;
 }
+
+/** What I do/ did buttons **/
 .carets {
 	display: flex;
 	justify-content: space-around;
@@ -96,8 +106,16 @@ button {
 .caret-btn:hover {
 	color: rgb(255, 255, 255);
 }
+
+@media screen and (min-width: 720px) {
+  .carets {
+    margin-bottom: 1rem;
+  }
+}
+/** end **/
+
 #toContact {
-	color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 #toContact:hover {
 	color: rgb(51, 51, 51);
@@ -138,18 +156,15 @@ button {
 	margin-top: calc(3.5rem + 0.5vw);
 }
 .column-item i {
-	font-size: calc(2rem + 0.5vw);
-	position: absolute;
-	top: 1rem;
-	transition: all 0.3s;
+  background: rgb(51, 51, 51);
+  border-radius: 2em;
+  color: rgb(174, 198, 207);
+  font-size: calc(1em + 0.5vw);
+  height: 1.8em;
+  line-height: calc(1.4em + 0.5vw);
+  position: absolute;
 	transform: translateX(-50%);
-}
-.column-item .hover {
-	color: rgb(174, 198, 207);
-	font-size: calc(3rem + 0.5vw);
-}
-#abouthead {
-	padding-top: 20px;
+  width: 1.8em;
 }
 #about {
 	background: rgb(255, 255, 255);
@@ -166,30 +181,26 @@ button {
   width: 100%;
   text-align: center;
 }
-.project img {
-	border-radius: 4px;
-	margin: 10px;
-}
-/** Clearfix **/
-.project:after {
-	content: "";
-  display: table;
-  clear: both;
-}
-.projectTxt {
-	margin: 10px 20px;
+
+.projectItems {
+  display: flex;
+  flex-wrap: wrap;
+	justify-content: space-around;
 }
 
-@media screen and (min-width: 720px) {
-  .project img {
-    float: left;
-    height: 100px;
-    width: 100px;
-  }
-  .project {
-	  text-align: left;
-	  margin: 0 50px;
-  }
+.project {
+  background: rgb(235, 235, 235);
+  margin: 15px;
+  max-width: 70vw;
+}
+
+.projectTxt {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.project img {
+  max-width: 70vw;
 }
 /** Footer and contact **/
 #contact {
