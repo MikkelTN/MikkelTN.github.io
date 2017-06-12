@@ -11,7 +11,7 @@
   	<!-- Import FA -->
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   	<!-- Import font -->
-  	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700" rel="stylesheet" type="text/css">
   	<!-- Custom style -->
   	<link href="main.css" rel="stylesheet">
 
@@ -19,7 +19,6 @@
   	<script type="text/javascript" src="scripts/JS_fadeOnScroll.js"></script>
   	<script type="text/javascript" src="scripts/JS_scrollButtons.js"></script>
   	<script type="text/javascript" src="scripts/JS_typeWriter.js"></script>
-    <script type="text/javascript" src="scripts/JS_highlightOnHover.js"></script>
 
   	<!-- Analytics -->
   	<script>
@@ -51,13 +50,15 @@
         <div class="flexbound">
           <h3 class="typewrite" data-type="I am a frontend engineer."></h3> <!-- Header -->
         </div>
-        <button class="scroll-btn def-btn" id="toContact">Let's work together</button>
+        <button class="scroll-btn def-btn uppercase" id="toContact">Let's work together</button>
       </div>
       <div class="carets">
-        <button class="scroll-btn caret-btn blue" id="toAbout">What I do<br>
+        <button class="scroll-btn caret-btn blue" id="toAbout">
+          <p>What I do</p>
           <i class="fa fa-caret-down"></i>
         </button>
-        <button class="scroll-btn caret-btn blue" id="toProjects">What I did<br>
+        <button class="scroll-btn caret-btn blue" id="toProjects">
+          <p>What I did</p>
           <i class="fa fa-caret-down"></i>
         </button>
       </div>
@@ -68,17 +69,17 @@
 
     <!-- About me section -->
     <section id="about">
-      <h2 id="abouthead">My competences</h2>
+      <h2>About me</h2>
       <ul class="columns">
         <li class="column-item">
           <i class="fa fa-pencil"></i>
           <h3>Design</h3>
-          <p>I build websites and applications directed by intuitive and minimalistic design. With a focus on well known user-friendly patterns and an attention to detail, I aim for a great user experience and compatibility across all devices and browsers.</p>
+          <p>I build great websites and applications directed by intuitive and minimalistic design. With a focus on well known user-friendly patterns and an attention to detail, I aim for a great user experience and compatibility across all devices and browsers.</p>
         </li>
         <li class="column-item hoverField" id="code">
           <i class="fa fa-code"></i>
           <h3>Code</h3>
-          <p>I create websites using HTML5, CSS3 and JavaScript. I enjoy writing scripts from scratch, but I am familiar with frameworks such as React, Angular and Bootstrap among others. For a better understading of the entire development stack, I have also worked with backend technologies such as PHP, MySQL and Java.</p>
+          <p>I enjoy building everything from scratch, but I make sure to keep myself at the forefront of the wide world of frontend frameworks and libraries. For a better understading of the entire development stack, I have also worked with backend technologies.</p>
         </li>
         <li class="column-item hoverField" id="relations">
           <i class="fa fa-handshake-o"></i>
@@ -89,23 +90,25 @@
     </section> <!-- What I do! -->
 
     <section id="projects">
-      <h2>My private projects</h2>
-      <div class="project">
-        <a href="https://mikkeltn.github.io/platformgame/" target="_blank">
-          <img src="pics/platformgame.png" alt="Platform game">
-        </a>
-        <div class="projectTxt">
-          <h3>A platform game</h3>
-          <p>A simple but difficult platformgame created almost completely in vanilla JavaScript. Give it a try!</p>
+      <h2>Private projects</h2>
+      <div class="projectItems">
+        <div class="project">
+          <a href="https://mikkeltn.github.io/platformgame/" target="_blank">
+            <img src="pics/platformgame.png" alt="Platform game">
+          </a>
+          <div class="projectTxt">
+            <strong class="uppercase">A platform game</strong>
+            <p class="gray">Funny game built in vanilla JavaScript</p>
+          </div>
         </div>
-      </div>
-      <div class="project">
-        <a href="https://mikkeltn.github.io/canvasplayground/" target="_blank">
-          <img src="pics/canvasplayground.png" alt="Canvas playground">
-        </a>
-        <div class="projectTxt">
-          <h3>A Canvas playground</h3>
-          <p>A paint application built using Webpack/Babel/React and the canvas HTML element. Lighten up your day with the rainbow brush!</p>
+        <div class="project">
+          <a href="https://mikkeltn.github.io/canvasplayground/" target="_blank">
+            <img src="pics/canvasplayground.png" alt="Canvas playground">
+          </a>
+          <div class="projectTxt">
+            <strong class="uppercase">Canvas playground</strong>
+            <p class="gray">Awesome paint program built with React</p>
+          </div>
         </div>
       </div>
     </section>
